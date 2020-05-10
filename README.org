@@ -1,0 +1,33 @@
+* Trip Mode
+Emacs minor mode for logging stuff with relative timestamps:
+
+#+BEGIN_SRC
+Triplog: starting new trip at 28.10.2013 03:30:00+03
+Dose: a cup of green tee
+Age: 20 years
+Body weight: 65 kg
+
+
+T+00:00:00 A nice hot feeling in the stomach.
+
+T+00:00:49 First minute of example for TripLog.
+Press Enter two times to start a new paragraph.
+
+T+00:03:04 A certain will to go and code some cool stuff!
+
+T+00:06:08 Six minutes are already over.
+Look, you can have subsequent two lines in a file.
+
+T+00:22:14 But every two subsequent Enters will result in a new timestamp insertion.
+
+T+0:34 You can close this file and open it again.  Just run the launching command, 
+and the plugin will restore the start time from the first line.
+#+END_SRC
+
+** Usage
+Plug it in with ~(require 'trip-mode)~ and either ~M-x trip-mode RET~ in a buffer or start a new trip: ~M-x trip-into-trip RET~.
+
+** Credits
+Vitaly Pavlenko implemented an identical [[https://github.com/vpavlenko/triplog/][Sublime Text plugin]] in 2013.
+
+Licensed under GPLv3 because why not.
