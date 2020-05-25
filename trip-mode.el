@@ -69,7 +69,7 @@
 
 (define-minor-mode trip-mode
   "Add relative timestamps to every paragraph"
-  :lighter "Trip"
+  :lighter " Trip"
   :keymap (let ((map (make-sparse-keymap)))
 	    (define-key map (kbd "RET") 'trip-newline)
 	    map)
